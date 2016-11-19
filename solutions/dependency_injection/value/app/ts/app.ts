@@ -16,7 +16,7 @@ import {ApiService, API_URL} from 'services/ApiService';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 @Component({
   selector: 'di-value-app',

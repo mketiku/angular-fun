@@ -28,7 +28,7 @@ import { youTubeServiceInjectables } from 'components/YouTubeSearchComponent';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 @Component({
   selector: 'http-app',

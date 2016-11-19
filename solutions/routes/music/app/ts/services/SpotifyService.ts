@@ -13,7 +13,7 @@ import 'rxjs/Rx';
 export class SpotifyService {
   static BASE_URL: string = 'https://api.spotify.com/v1';
 
-  constructor(public http: Http) {
+  constructor(private http: Http) {
   }
 
   query(URL: string, params?: Array<string>): Observable<any[]> {

@@ -42,7 +42,7 @@ export class ChatMessage implements OnInit {
   currentUser: User;
   incoming: boolean;
 
-  constructor(public userService: UserService) {
+  constructor(private userService: UserService) {
   }
 
   ngOnInit(): void {
@@ -113,10 +113,10 @@ export class ChatWindow implements OnInit {
   draftMessage: Message;
   currentUser: User;
 
-  constructor(public messagesService: MessagesService,
-              public threadsService: ThreadsService,
-              public userService: UserService,
-              public el: ElementRef) {
+  constructor(private messagesService: MessagesService,
+              private threadsService: ThreadsService,
+              private userService: UserService,
+              private el: ElementRef) {
   }
 
   ngOnInit(): void {

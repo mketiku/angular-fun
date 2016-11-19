@@ -31,7 +31,7 @@ import {LoggedInGuard} from 'guards/loggedIn.guard';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 @Component({
   selector: 'router-app',
@@ -61,7 +61,7 @@ require('css/styles.scss');
   `
 })
 class RoutesDemoApp {
-  constructor(public router: Router) {
+  constructor(private router: Router) {
   }
 }
 

@@ -50,7 +50,7 @@ class SearchResult {
  */
 @Injectable()
 export class YouTubeService {
-  constructor(public http: Http,
+  constructor(private http: Http,
               @Inject(YOUTUBE_API_KEY) private apiKey: string,
               @Inject(YOUTUBE_API_URL) private apiUrl: string) {
   }
@@ -100,7 +100,7 @@ export class SearchBox implements OnInit {
   loading: EventEmitter<boolean> = new EventEmitter<boolean>();
   results: EventEmitter<SearchResult[]> = new EventEmitter<SearchResult[]>();
 
-  constructor(public youtube: YouTubeService,
+  constructor(private youtube: YouTubeService,
               private el: ElementRef) {
   }
 

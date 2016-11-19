@@ -21,7 +21,7 @@ export class ThreadsService {
   // selected thread
   currentThreadMessages: Observable<Message[]>;
 
-  constructor(public messagesService: MessagesService) {
+  constructor(private messagesService: MessagesService) {
 
     this.threads = messagesService.messages
       .map( (messages: Message[]) => {

@@ -26,8 +26,8 @@ import * as _ from 'underscore';
 export class ChatNavBar implements OnInit {
   unreadMessagesCount: number;
 
-  constructor(public messagesService: MessagesService,
-              public threadsService: ThreadsService) {
+  constructor(private messagesService: MessagesService,
+              private threadsService: ThreadsService) {
   }
 
   ngOnInit(): void {

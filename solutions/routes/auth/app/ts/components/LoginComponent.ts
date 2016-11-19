@@ -40,7 +40,7 @@ import {AuthService} from 'services/AuthService';
 export class LoginComponent {
   message: string;
 
-  constructor(public authService: AuthService) {
+  constructor(private authService: AuthService) {
     this.message = '';
   }
 

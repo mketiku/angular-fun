@@ -5,9 +5,8 @@
     {
       "name": "Writing your First Angular 2 Web Application",
       "examples": [
-        "first_app/hello-world",
-        "first_app/angular2-reddit-base",
-        "first_app/angular2-reddit-completed"
+        "first_app/angular2_hello_world",
+        "first_app/angular2_reddit"
       ]
     },
     {
@@ -19,8 +18,8 @@
       "examples": ["how_angular_works/inventory_app"]
     },
     {
-      "name": "Built-in Components",
-      "examples": ["built_in_components"]
+      "name": "Built-in Directives",
+      "examples": ["built_in_directives"]
     },
     {
       "name": "Forms in Angular 2",

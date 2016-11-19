@@ -49,7 +49,7 @@ import {ChatExampleData} from './ChatExampleData';
 /*
  * Webpack
  */
-require('../css/styles.scss');
+require('../css/styles.css');
 
 @Component({
   selector: 'chat-app',
@@ -64,9 +64,9 @@ require('../css/styles.scss');
   `
 })
 class ChatApp {
-  constructor(public messagesService: MessagesService,
-              public threadsService: ThreadsService,
-              public userService: UserService) {
+  constructor(private messagesService: MessagesService,
+              private threadsService: ThreadsService,
+              private userService: UserService) {
     ChatExampleData.init(messagesService, threadsService, userService);
   }
 }

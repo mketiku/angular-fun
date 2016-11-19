@@ -35,7 +35,7 @@ import {SPOTIFY_PROVIDERS} from 'services/SpotifyService';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 @Component({
   selector: 'router-app',

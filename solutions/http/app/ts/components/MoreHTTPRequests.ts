@@ -24,7 +24,7 @@ export class MoreHTTPRequests {
   data: Object;
   loading: boolean;
 
-  constructor(public http: Http) {
+  constructor(private http: Http) {
   }
 
   makePost(): void {

@@ -28,8 +28,8 @@ export class ArtistComponent implements OnInit {
   id: string;
   artist: Object;
 
-  constructor(public route: ActivatedRoute, public spotify: SpotifyService,
-              public location: Location) {
+  constructor(private route: ActivatedRoute, private spotify: SpotifyService,
+              private location: Location) {
     route.params.subscribe(params => { this.id = params['id']; });
   }
 

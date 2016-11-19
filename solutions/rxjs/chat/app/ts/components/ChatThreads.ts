@@ -30,7 +30,7 @@ export class ChatThread implements OnInit {
   thread: Thread;
   selected: boolean = false;
 
-  constructor(public threadsService: ThreadsService) {
+  constructor(private threadsService: ThreadsService) {
   }
 
   ngOnInit(): void {
@@ -69,7 +69,7 @@ export class ChatThread implements OnInit {
 export class ChatThreads {
   threads: Observable<any>;
 
-  constructor(public threadsService: ThreadsService) {
+  constructor(private threadsService: ThreadsService) {
     this.threads = threadsService.orderedThreads;
   }
 }

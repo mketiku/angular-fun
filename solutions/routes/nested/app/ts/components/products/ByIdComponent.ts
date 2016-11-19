@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ByIdComponent {
   id: string;
 
-  constructor(public route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute) {
     route.params.subscribe(params => { this.id = params['id']; });
   }
 }

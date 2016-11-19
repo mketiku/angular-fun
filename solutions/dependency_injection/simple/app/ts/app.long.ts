@@ -17,7 +17,7 @@ import {ApiService} from 'services/ApiService';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 require('images/ng-book-2-minibook.png');
 
 @Component({

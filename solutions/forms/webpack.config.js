@@ -112,14 +112,6 @@ function makeConfig(options) {
         { test: /\.json$/, loader: 'json' },
         // { test: /^(?!.*\.min\.css$).*\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap')},
         { test: /^.*\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap')},
-        { test: /\.scss$/, loaders: ['style-loader',
-                                     ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap'),
-                                     'sass-loader' +
-                                     '?outputStyle=expanded&' +
-                                     'root='+appDir+'&' +
-                                     '&includePaths[]'+npmRoot + '&' +
-                                     '&includePaths[]'+appDir
-                                    ]},
         { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,         loader: 'url-loader' },
         { test: /\.html$/,    loader: 'raw' },
         { test: /^index\.html$/, loader: 'file-loader?name=[path][name].[ext]' },

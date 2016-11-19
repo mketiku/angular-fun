@@ -17,7 +17,7 @@ export class SimpleHTTPComponent {
   data: Object;
   loading: boolean;
 
-  constructor(public http: Http) {
+  constructor(private http: Http) {
   }
 
   makeRequest(): void {

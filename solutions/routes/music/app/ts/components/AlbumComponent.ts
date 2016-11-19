@@ -38,9 +38,9 @@ export class AlbumComponent implements OnInit {
   id: string;
   album: Object;
 
-  constructor(public route: ActivatedRoute,
-              public spotify: SpotifyService, // <-- injected
-              public location: Location) {
+  constructor(private route: ActivatedRoute,
+              private spotify: SpotifyService, // <-- injected
+              private location: Location) {
     route.params.subscribe(params => { this.id = params['id']; });
   }
 

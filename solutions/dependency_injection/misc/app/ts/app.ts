@@ -11,7 +11,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 class SimpleService {
   constructor() {

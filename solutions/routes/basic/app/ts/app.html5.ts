@@ -23,7 +23,7 @@ import {ContactComponent} from 'components/ContactComponent';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 @Component({
   selector: 'router-app',

@@ -19,7 +19,7 @@ import {ViewPortService} from 'services/ViewPortService';
 /*
  * Webpack
  */
-require('css/styles.scss');
+require('css/styles.css');
 
 @Component({
   selector: 'di-sample-app',
