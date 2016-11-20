@@ -27,7 +27,9 @@ const HEROES: Hero[] = [ // init an array of HEROES of type Hero
     <h2>My Heroes</h2>
     <ul class="heroes"> <!--//take each hero in array and
     //store in local hero variable--->
-      <li *ngFor="let hero of heroes">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+      <!--Target the click event of the list element and cal the onSelect method
+      func while passing the selected hero as a input variable -->
         <span class="badge">{{hero.id}}</span> {{hero.name}}
       </li>
     </ul>
