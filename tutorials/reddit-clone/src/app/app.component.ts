@@ -10,7 +10,7 @@ import {  Component,Input } from '@angular/core';
   `
 })
 export class ArticleComponent {
-  @Input() article: Object;// tell angular we are expecting input on the article component 
+  @Input() article: Object;// tell angular we are expecting input on the article component
 }
 @Component({
   selector: 'app-sidebar',
@@ -29,8 +29,8 @@ export class SidebarComponent {}
     <div id="container">
       <app-sidebar></app-sidebar>
       <div id="content">
-        <app-article>
-         [article]="article"</app-article>
+        <app-article
+         [article]="article"></app-article>
        </div>
     </div>
   `
